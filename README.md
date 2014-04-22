@@ -1,21 +1,42 @@
-SpreeXchange
+Spree 1c exchange extension
 ============
 
-Introduction goes here.
+Export/import products, orders between 1c and spree shop
 
 
-Example
-=======
+Installation
+============
 
-Example goes here.
+install as gem
+    gem 'spree_xchange', :git => 'https://github.com/2rba/spree_xchange'
 
-Testing
--------
+    bundle install
+    rake spree_xchange:install:migrations
+    rake db:migrate
 
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
+in 1c as site adders enter spree.address/1c_exchange.php
+as login/password enter spree user credentials
 
-    $ bundle
-    $ bundle exec rake test_app
-    $ bundle exec rspec spec
+done
 
-Copyright (c) 2012 [name of extension creator], released under the New BSD License
+Интергация интергет магазина Spree и 1с
+============
+
+Экспорт/импорт продуктовб заказов между 1с и spree
+
+Установка
+============
+Установить как gem (добавить в Gemfile)
+    gem 'spree_xchange', :git => 'https://github.com/2rba/spree_xchange'
+выполнить
+    bundle install
+    rake spree_xchange:install:migrations
+    rake db:migrate
+
+Настройки 1с:
+ адрес сайта: spree.address/1c_exchange.php
+ логин/пароль: логин/пароль пользователя spree
+
+готово
+
+Copyright (c) 2012 Sergey Tyatin, released under the New BSD License
