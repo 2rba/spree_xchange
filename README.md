@@ -8,6 +8,7 @@ Installation
 ============
 
 install as gem
+
     gem 'spree_xchange', :git => 'https://github.com/2rba/spree_xchange'
 
     bundle install
@@ -27,15 +28,18 @@ done
 Установка
 ============
 Установить как gem (добавить в Gemfile)
+
     gem 'spree_xchange', :git => 'https://github.com/2rba/spree_xchange'
 выполнить
+
     bundle install
     rake spree_xchange:install:migrations
     rake db:migrate
 
 Настройки 1с:
- адрес сайта: spree.address/1c_exchange.php
- логин/пароль: логин/пароль пользователя spree
+
+    адрес сайта: spree.address/1c_exchange.php
+    логин/пароль: логин/пароль пользователя spree
 
 готово
 
